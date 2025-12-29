@@ -1,0 +1,43 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { SITE } from "../config/site.js";
+
+const title = `Ofertas e promoções: como avaliar — ${SITE.name ?? SITE.siteName}`;
+const description = "Guia prático para avaliar ofertas: o que comparar, o que ignorar e como evitar surpresas nas condições.";
+const TELEGRAM_URL = SITE.telegram ?? SITE.telegramUrl;
+---
+
+<BaseLayout title={title} description={description} canonicalPath="/ofertas-e-promocoes">
+  <main class="container" style="padding: 32px 0;">
+    <h1>Ofertas e promoções: como avaliar</h1>
+    <p>
+      Promoções mudam com frequência. Para não depender só de “headline”, o ideal é olhar para 3 pontos: regras,
+      prazos e limitações.
+    </p>
+
+    <h2>O que comparar</h2>
+    <ul>
+      <li><strong>O que recebes</strong>: bónus, rodadas grátis, cashback, etc.</li>
+      <li><strong>O que é exigido</strong>: requisitos de apostas (wagering) e jogos elegíveis.</li>
+      <li><strong>Prazos e limites</strong>: validade e limites de levantamento quando existirem.</li>
+    </ul>
+
+    <h2>Sinal de alerta</h2>
+    <ul>
+      <li>Regras pouco claras.</li>
+      <li>Prazo muito curto sem aviso.</li>
+      <li>Vários limites acumulados (cap + jogos restritos + wagering alto).</li>
+    </ul>
+
+    <p style="margin-top:24px;">
+      <a class="btn btn-primary" href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer">
+        Ver atualizações no Telegram
+      </a>
+    </p>
+
+    <p style="margin-top:20px;">
+      Próximo guia: <a href="/glossario-termos">Glossário (wagering, RTP, volatilidade)</a> ·
+      <a href="/">Voltar à homepage</a>
+    </p>
+  </main>
+</BaseLayout>
