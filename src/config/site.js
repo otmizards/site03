@@ -1,13 +1,16 @@
 export const siteConfig = {
-  siteName: "Guias de Casino Online em Portugal",
-  siteDescription: "Guias claros e atualizados sobre casino online em Portugal. Explicações simples, boas práticas e acesso a comunidades no Telegram com novidades.",
-  siteUrl: "https://site03.360winspt.com",
+  // padrão
+  siteName: "360Wins Portugal",
+  siteDescription: "Guias e explicações claras sobre bónus, rodadas grátis e boas práticas. Atualizações via Telegram.",
+  siteUrl: "https://site01.360winspt.com",
   telegramUrl: "https://t.me/+cIQNof1Xess1NDE8",
 
-  name: "Guias de Casino Online em Portugal",
-  description: "Guias claros e atualizados sobre casino online em Portugal. Explicações simples, boas práticas e acesso a comunidades no Telegram com novidades.",
-  url: "https://site03.360winspt.com",
+  // aliases (compatibilidade total com templates antigos)
+  name: "360Wins Portugal",
+  description: "Guias e explicações claras sobre bónus, rodadas grátis e boas práticas. Atualizações via Telegram.",
+  url: "https://site01.360winspt.com",
   telegram: "https://t.me/+cIQNof1Xess1NDE8",
 };
 
+// compatibilidade para qualquer import antigo
 export const SITE = siteConfig;
