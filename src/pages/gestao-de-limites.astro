@@ -1,0 +1,153 @@
+---
+import { SITE } from "../config/site.js";
+import GuideLayout from "../layouts/GuideLayout.astro";
+
+const title =
+  "Gestão de limites no casino online por tipo de jogo | 360Wins Portugal";
+const description =
+  "Guia explicativo sobre gestão de limites no casino online ajustada a diferentes tipos de jogos: slots, jogos de mesa e casino ao vivo.";
+---
+
+<GuideLayout title={title} description={description} canonicalPath="/gestao-de-limites">
+  <article class="guide-layout">
+    <header class="guide-hero">
+      <p class="kicker">Controlo operacional</p>
+      <h1>Gestão de limites no casino online</h1>
+      <p class="lead">
+        A gestão de limites no casino online deve ter em conta
+        <strong>o tipo de jogo escolhido</strong>.
+        Slots, jogos de mesa e casino ao vivo têm ritmos diferentes,
+        o que exige limites ajustados para manter controlo e evitar decisões impulsivas.
+      </p>
+
+      <div class="guide-meta">
+        <span>Conteúdo educativo (Portugal)</span>
+        <span>Leitura: 6–8 min</span>
+      </div>
+    </header>
+
+    <nav class="toc" aria-label="Índice do guia">
+      <h2>Índice</h2>
+      <ol>
+        <li><a href="#porque-ajustar">Porque ajustar limites por tipo de jogo</a></li>
+        <li><a href="#tipos-limites">Tipos de limites essenciais</a></li>
+        <li><a href="#slots">Limites em slots</a></li>
+        <li><a href="#mesa">Limites em jogos de mesa</a></li>
+        <li><a href="#live">Limites no casino ao vivo</a></li>
+        <li><a href="#erros">Erros comuns na definição de limites</a></li>
+        <li><a href="#proximos-passos">Próximos passos</a></li>
+      </ol>
+    </nav>
+
+    <section id="porque-ajustar">
+      <h2>Porque ajustar limites por tipo de jogo</h2>
+      <p>
+        Cada tipo de jogo apresenta um ritmo e uma dinâmica próprios.
+        Aplicar os mesmos limites a todos pode resultar
+        em perda de controlo ou decisões precipitadas.
+      </p>
+      <p>
+        Ajustar limites ao jogo escolhido ajuda a manter sessões mais previsíveis.
+      </p>
+    </section>
+
+    <section id="tipos-limites">
+      <h2>Tipos de limites essenciais</h2>
+      <p>
+        Independentemente do jogo, três limites são fundamentais:
+      </p>
+      <ul>
+        <li><strong>tempo</strong> — duração máxima da sessão</li>
+        <li><strong>perda</strong> — valor máximo aceitável</li>
+        <li><strong>frequência</strong> — número de sessões</li>
+      </ul>
+      <p>
+        Estes limites devem ser definidos antes de iniciar qualquer jogo.
+      </p>
+    </section>
+
+    <section id="slots">
+      <h2>Limites em slots</h2>
+      <p>
+        As slots têm um ritmo elevado e rodadas rápidas.
+        Isso exige especial atenção ao tempo e ao valor apostado.
+      </p>
+      <ul>
+        <li>sessões mais curtas</li>
+        <li>controlo rigoroso do tempo</li>
+        <li>evitar aumentar apostas após perdas</li>
+      </ul>
+    </section>
+
+    <section id="mesa">
+      <h2>Limites em jogos de mesa</h2>
+      <p>
+        Jogos de mesa tendem a ter um ritmo mais pausado.
+        Ainda assim, decisões consecutivas podem acumular risco.
+      </p>
+      <ul>
+        <li>definir limite de perdas por sessão</li>
+        <li>respeitar limites mínimos e máximos da mesa</li>
+        <li>evitar prolongar sessões após fadiga</li>
+      </ul>
+    </section>
+
+    <section id="live">
+      <h2>Limites no casino ao vivo</h2>
+      <p>
+        No casino ao vivo, o envolvimento é maior
+        e o ritmo depende do dealer e da mesa.
+      </p>
+      <ul>
+        <li>limitar o tempo de permanência</li>
+        <li>evitar múltiplas mesas em simultâneo</li>
+        <li>pausar após sessões longas</li>
+      </ul>
+    </section>
+
+    <section id="erros">
+      <h2>Erros comuns na definição de limites</h2>
+      <ul>
+        <li>usar os mesmos limites para todos os jogos</li>
+        <li>alterar limites durante a sessão</li>
+        <li>ignorar sinais de fadiga</li>
+        <li>tentar compensar perdas</li>
+      </ul>
+      <p>
+        Limites funcionam apenas quando são respeitados.
+      </p>
+    </section>
+
+    <section id="proximos-passos">
+      <h2>Próximos passos</h2>
+      <ul>
+        <li><a href="/riscos-e-variancia">Riscos e variância por tipo de jogo</a></li>
+        <li><a href="/jogo-consciente">Jogo consciente e escolha de jogos</a></li>
+      </ul>
+
+      <div class="cta-box">
+        <h3>Conteúdo educativo (opcional)</h3>
+        <p>
+          No Telegram publicamos guias sobre controlo e boas práticas
+          adaptadas a diferentes tipos de jogos.
+        </p>
+        <a
+          class="btn btn-telegram btn-cta"
+          href={SITE.telegram ?? SITE.telegramUrl ?? "#"}
+          target="_blank"
+          rel="nofollow noopener noreferrer"
+        >
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M21.6 4.6 2.9 11.8c-1.3.5-1.3 1.2-.2 1.6l4.8 1.5 1.8 5.5c.2.6.1.8.8.8.6 0 1-.3 1.3-.6l2.3-2.3 4.8 3.5c.9.5 1.5.2 1.7-.8l3.1-14.6c.3-1.3-.5-1.9-1.7-1.4Z"
+                fill="white"
+              />
+            </svg>
+          </span>
+          Entrar no Telegram
+        </a>
+      </div>
+    </section>
+  </article>
+</GuideLayout>

@@ -1,0 +1,158 @@
+---
+import { SITE } from "../config/site.js";
+import GuideLayout from "../layouts/GuideLayout.astro";
+
+const title =
+  "Riscos e variância no casino online por tipo de jogo | 360Wins Portugal";
+const description =
+  "Guia explicativo sobre riscos e variância no casino online, analisando diferenças entre slots, jogos de mesa e casino ao vivo.";
+---
+
+<GuideLayout title={title} description={description} canonicalPath="/riscos-e-variancia">
+  <article class="guide-layout">
+    <header class="guide-hero">
+      <p class="kicker">Comportamento dos jogos</p>
+      <h1>Riscos e variância no casino online</h1>
+      <p class="lead">
+        No casino online, os resultados variam naturalmente ao longo do tempo.
+        Essa variação chama-se <strong>variância</strong> e manifesta-se
+        de forma diferente conforme o tipo de jogo.
+        Este guia explica como interpretar riscos e oscilações de forma objetiva.
+      </p>
+
+      <div class="guide-meta">
+        <span>Conteúdo educativo (Portugal)</span>
+        <span>Leitura: 6–8 min</span>
+      </div>
+    </header>
+
+    <nav class="toc" aria-label="Índice do guia">
+      <h2>Índice</h2>
+      <ol>
+        <li><a href="#o-que-e">O que é variância</a></li>
+        <li><a href="#porque-existe">Porque a variância existe</a></li>
+        <li><a href="#slots">Variância em slots</a></li>
+        <li><a href="#mesa">Variância em jogos de mesa</a></li>
+        <li><a href="#live">Variância no casino ao vivo</a></li>
+        <li><a href="#erros">Erros comuns de interpretação</a></li>
+        <li><a href="#proximos-passos">Próximos passos</a></li>
+      </ol>
+    </nav>
+
+    <section id="o-que-e">
+      <h2>O que é variância</h2>
+      <p>
+        Variância descreve a forma como ganhos e perdas
+        se distribuem ao longo do tempo.
+        Mesmo com regras fixas, os resultados podem oscilar
+        sem indicar qualquer padrão.
+      </p>
+      <p>
+        Entender este conceito ajuda a evitar conclusões precipitadas
+        baseadas em sessões curtas.
+      </p>
+    </section>
+
+    <section id="porque-existe">
+      <h2>Porque a variância existe</h2>
+      <p>
+        A variância existe porque cada rodada ou jogada
+        é um evento independente.
+        O histórico recente não altera o resultado seguinte.
+      </p>
+      <ul>
+        <li>resultados não se “compensam” automaticamente</li>
+        <li>sequências fazem parte do funcionamento normal</li>
+        <li>curto prazo é mais imprevisível</li>
+      </ul>
+    </section>
+
+    <section id="slots">
+      <h2>Variância em slots</h2>
+      <p>
+        As slots apresentam variância elevada
+        devido ao ritmo rápido e à independência das rodadas.
+      </p>
+      <ul>
+        <li>períodos longos sem ganhos relevantes</li>
+        <li>ganhos concentrados em poucos momentos</li>
+        <li>oscilações acentuadas no curto prazo</li>
+      </ul>
+      <p>
+        Estas características exigem especial atenção
+        ao tempo e aos limites definidos.
+      </p>
+    </section>
+
+    <section id="mesa">
+      <h2>Variância em jogos de mesa</h2>
+      <p>
+        Jogos de mesa tendem a apresentar oscilações
+        mais graduais, mas ainda imprevisíveis.
+      </p>
+      <ul>
+        <li>ritmo mais pausado</li>
+        <li>resultados distribuídos ao longo do tempo</li>
+        <li>decisões sucessivas acumulam risco</li>
+      </ul>
+    </section>
+
+    <section id="live">
+      <h2>Variância no casino ao vivo</h2>
+      <p>
+        No casino ao vivo, a variância combina
+        ritmo humano e regras fixas.
+      </p>
+      <ul>
+        <li>sessões mais longas aumentam exposição</li>
+        <li>envolvimento emocional mais elevado</li>
+        <li>resultados sujeitos ao ritmo da mesa</li>
+      </ul>
+    </section>
+
+    <section id="erros">
+      <h2>Erros comuns de interpretação</h2>
+      <ul>
+        <li>achar que uma sequência negativa “vai virar”</li>
+        <li>interpretar ganhos como sinal de padrão</li>
+        <li>comparar resultados de jogos diferentes</li>
+        <li>ignorar o impacto do tempo de jogo</li>
+      </ul>
+      <p>
+        Estes erros aumentam risco e reduzem controlo.
+      </p>
+    </section>
+
+    <section id="proximos-passos">
+      <h2>Próximos passos</h2>
+      <ul>
+        <li><a href="/jogo-consciente">Jogo consciente e escolha de jogos</a></li>
+        <li><a href="/gestao-de-limites">Gestão de limites por tipo de jogo</a></li>
+      </ul>
+
+      <div class="cta-box">
+        <h3>Conteúdo educativo (opcional)</h3>
+        <p>
+          No Telegram publicamos guias explicativos
+          sobre comportamento e funcionamento dos jogos.
+        </p>
+        <a
+          class="btn btn-telegram btn-cta"
+          href={SITE.telegram ?? SITE.telegramUrl ?? "#"}
+          target="_blank"
+          rel="nofollow noopener noreferrer"
+        >
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M21.6 4.6 2.9 11.8c-1.3.5-1.3 1.2-.2 1.6l4.8 1.5 1.8 5.5c.2.6.1.8.8.8.6 0 1-.3 1.3-.6l2.3-2.3 4.8 3.5c.9.5 1.5.2 1.7-.8l3.1-14.6c.3-1.3-.5-1.9-1.7-1.4Z"
+                fill="white"
+              />
+            </svg>
+          </span>
+          Entrar no Telegram
+        </a>
+      </div>
+    </section>
+  </article>
+</GuideLayout>

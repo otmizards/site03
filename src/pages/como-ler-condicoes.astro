@@ -1,0 +1,166 @@
+---
+import { SITE } from "../config/site.js";
+import GuideLayout from "../layouts/GuideLayout.astro";
+
+const title =
+  "Como ler condições no casino online por tipo de jogo | 360Wins Portugal";
+const description =
+  "Guia explicativo sobre como ler condições no casino online tendo em conta os diferentes tipos de jogos: slots, jogos de mesa e casino ao vivo.";
+---
+
+<GuideLayout title={title} description={description} canonicalPath="/como-ler-condicoes">
+  <article class="guide-layout">
+    <header class="guide-hero">
+      <p class="kicker">Leitura de regras</p>
+      <h1>Como ler condições no casino online</h1>
+      <p class="lead">
+        As condições no casino online <strong>não são universais</strong>.
+        Regras, limites e requisitos variam consoante o tipo de jogo.
+        Este guia explica como interpretar condições de forma objetiva,
+        tendo em conta slots, jogos de mesa e casino ao vivo.
+      </p>
+
+      <div class="guide-meta">
+        <span>Conteúdo educativo (Portugal)</span>
+        <span>Leitura: 6–8 min</span>
+      </div>
+    </header>
+
+    <nav class="toc" aria-label="Índice do guia">
+      <h2>Índice</h2>
+      <ol>
+        <li><a href="#porque-variar">Porque as condições variam</a></li>
+        <li><a href="#onde-ler">Onde encontrar as regras relevantes</a></li>
+        <li><a href="#slots">Condições aplicadas a slots</a></li>
+        <li><a href="#mesa">Condições em jogos de mesa</a></li>
+        <li><a href="#live">Condições no casino ao vivo</a></li>
+        <li><a href="#erros">Erros comuns de interpretação</a></li>
+        <li><a href="#proximos-passos">Próximos passos</a></li>
+      </ol>
+    </nav>
+
+    <section id="porque-variar">
+      <h2>Porque as condições variam</h2>
+      <p>
+        Cada tipo de jogo tem regras próprias, ritmos diferentes
+        e níveis distintos de interação.
+        Por esse motivo, as condições aplicadas não são iguais
+        em todas as categorias.
+      </p>
+      <p>
+        Ler condições sem considerar o jogo em causa
+        é uma das principais fontes de confusão.
+      </p>
+    </section>
+
+    <section id="onde-ler">
+      <h2>Onde encontrar as regras relevantes</h2>
+      <p>
+        Nem toda a informação apresentada pelo casino
+        tem impacto direto no jogo.
+        Para uma leitura eficiente, foca-te em:
+      </p>
+      <ul>
+        <li>termos específicos do jogo</li>
+        <li>limites de aposta aplicáveis</li>
+        <li>prazos e expiração</li>
+        <li>restrições por tipo de jogo</li>
+      </ul>
+    </section>
+
+    <section id="slots">
+      <h2>Condições aplicadas a slots</h2>
+      <p>
+        As slots funcionam de forma automática
+        e cada rodada é independente.
+        As condições costumam focar-se em:
+      </p>
+      <ul>
+        <li>valor máximo por rodada</li>
+        <li>jogos elegíveis</li>
+        <li>prazos de utilização</li>
+      </ul>
+      <p>
+        Devido ao ritmo rápido, limites mal interpretados
+        podem ser ultrapassados facilmente.
+      </p>
+    </section>
+
+    <section id="mesa">
+      <h2>Condições em jogos de mesa</h2>
+      <p>
+        Jogos de mesa como roleta ou blackjack
+        têm regras mais específicas.
+        Nem todas as variações contam da mesma forma
+        para condições associadas.
+      </p>
+      <ul>
+        <li>diferenças entre versões do mesmo jogo</li>
+        <li>restrições de apostas paralelas</li>
+        <li>limites de mesa definidos pelo casino</li>
+      </ul>
+    </section>
+
+    <section id="live">
+      <h2>Condições no casino ao vivo</h2>
+      <p>
+        No casino ao vivo, o ritmo é ditado pelo dealer
+        e pela mesa em funcionamento.
+        As condições tendem a ser mais restritivas
+        devido à interação em tempo real.
+      </p>
+      <ul>
+        <li>limites mínimos e máximos por mesa</li>
+        <li>variações consoante o fornecedor</li>
+        <li>disponibilidade limitada de mesas</li>
+      </ul>
+    </section>
+
+    <section id="erros">
+      <h2>Erros comuns de interpretação</h2>
+      <ul>
+        <li>assumir que regras são iguais para todos os jogos</li>
+        <li>ignorar diferenças entre versões</li>
+        <li>ler apenas resumos promocionais</li>
+        <li>não validar limites antes de jogar</li>
+      </ul>
+      <p>
+        Uma leitura objetiva reduz surpresas
+        e ajuda a tomar decisões mais informadas.
+      </p>
+    </section>
+
+    <section id="proximos-passos">
+      <h2>Próximos passos</h2>
+      <ul>
+        <li><a href="/gestao-de-limites">Gestão de limites por tipo de jogo</a></li>
+        <li><a href="/riscos-e-variancia">Riscos e variância nos diferentes jogos</a></li>
+        <li><a href="/jogo-consciente">Escolha consciente de jogos</a></li>
+      </ul>
+
+      <div class="cta-box">
+        <h3>Conteúdo educativo (opcional)</h3>
+        <p>
+          No Telegram publicamos novos guias explicativos
+          sobre regras e funcionamento dos jogos.
+        </p>
+        <a
+          class="btn btn-telegram btn-cta"
+          href={SITE.telegram ?? SITE.telegramUrl ?? "#"}
+          target="_blank"
+          rel="nofollow noopener noreferrer"
+        >
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M21.6 4.6 2.9 11.8c-1.3.5-1.3 1.2-.2 1.6l4.8 1.5 1.8 5.5c.2.6.1.8.8.8.6 0 1-.3 1.3-.6l2.3-2.3 4.8 3.5c.9.5 1.5.2 1.7-.8l3.1-14.6c.3-1.3-.5-1.9-1.7-1.4Z"
+                fill="white"
+              />
+            </svg>
+          </span>
+          Entrar no Telegram
+        </a>
+      </div>
+    </section>
+  </article>
+</GuideLayout>

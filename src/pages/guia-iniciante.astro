@@ -1,0 +1,170 @@
+---
+import { SITE } from "../config/site.js";
+import GuideLayout from "../layouts/GuideLayout.astro";
+
+const title =
+  "Guia para iniciantes no casino online: tipos de jogos e como funcionam | 360Wins Portugal";
+const description =
+  "Guia introdutório para iniciantes no casino online: principais tipos de jogos, como funcionam, diferenças práticas e o que esperar de cada um.";
+---
+
+<GuideLayout title={title} description={description} canonicalPath="/guia-iniciante">
+  <article class="guide-layout">
+    <header class="guide-hero">
+      <p class="kicker">Introdução</p>
+      <h1>Guia para iniciantes no casino online</h1>
+      <p class="lead">
+        Antes de jogar num casino online, é essencial compreender que
+        <strong>nem todos os jogos funcionam da mesma forma</strong>.
+        Cada tipo de jogo tem ritmos, regras e comportamentos próprios.
+        Este guia apresenta os principais tipos de jogos e explica,
+        de forma neutra, como funcionam na prática.
+      </p>
+
+      <div class="guide-meta">
+        <span>Conteúdo educativo (Portugal)</span>
+        <span>Leitura: 6–8 min</span>
+      </div>
+    </header>
+
+    <nav class="toc" aria-label="Índice do guia">
+      <h2>Índice</h2>
+      <ol>
+        <li><a href="#o-que-sao">O que são jogos de casino online</a></li>
+        <li><a href="#slots">Slots (máquinas de jogo)</a></li>
+        <li><a href="#jogos-mesa">Jogos de mesa</a></li>
+        <li><a href="#live-casino">Casino ao vivo</a></li>
+        <li><a href="#diferencas">Diferenças entre tipos de jogos</a></li>
+        <li><a href="#expectativas">O que esperar ao jogar</a></li>
+        <li><a href="#proximos-passos">Próximos passos</a></li>
+      </ol>
+    </nav>
+
+    <section id="o-que-sao">
+      <h2>O que são jogos de casino online</h2>
+      <p>
+        Jogos de casino online são versões digitais de jogos tradicionalmente
+        encontrados em casinos físicos. Funcionam com regras pré-definidas
+        e resultados gerados por sistemas automáticos ou por interação humana,
+        dependendo do tipo de jogo.
+      </p>
+      <p>
+        Compreender o funcionamento básico de cada categoria ajuda a evitar
+        expectativas erradas e decisões baseadas em suposições.
+      </p>
+    </section>
+
+    <section id="slots">
+      <h2>Slots (máquinas de jogo)</h2>
+      <p>
+        As slots são jogos automáticos baseados em símbolos e combinações.
+        O resultado de cada rodada é independente das anteriores
+        e não envolve decisões do jogador após iniciar a aposta.
+      </p>
+      <ul>
+        <li>funcionamento rápido e automático</li>
+        <li>resultados independentes entre rodadas</li>
+        <li>ritmo elevado de jogo</li>
+      </ul>
+      <p>
+        Por serem rápidas, as slots exigem atenção ao tempo de jogo
+        e aos limites definidos.
+      </p>
+    </section>
+
+    <section id="jogos-mesa">
+      <h2>Jogos de mesa</h2>
+      <p>
+        Jogos de mesa incluem opções como roleta, blackjack ou bacará.
+        Nestes jogos, as rodadas têm um ritmo mais pausado
+        e, em alguns casos, envolvem decisões do jogador.
+      </p>
+      <ul>
+        <li>ritmo geralmente mais lento que slots</li>
+        <li>regras específicas para cada jogo</li>
+        <li>interação direta com o jogo</li>
+      </ul>
+      <p>
+        Entender as regras básicas é essencial antes de iniciar qualquer sessão.
+      </p>
+    </section>
+
+    <section id="live-casino">
+      <h2>Casino ao vivo</h2>
+      <p>
+        No casino ao vivo, os jogos são conduzidos por dealers reais,
+        transmitidos em tempo real. O funcionamento é semelhante ao
+        de um casino físico, com apostas feitas online.
+      </p>
+      <ul>
+        <li>interação humana em tempo real</li>
+        <li>ritmo condicionado pelo dealer</li>
+        <li>experiência mais próxima do casino físico</li>
+      </ul>
+      <p>
+        Este formato tende a ser mais envolvente e requer maior controlo do tempo.
+      </p>
+    </section>
+
+    <section id="diferencas">
+      <h2>Diferenças entre tipos de jogos</h2>
+      <p>
+        Cada tipo de jogo apresenta diferenças claras que influenciam a experiência:
+      </p>
+      <ul>
+        <li>velocidade das rodadas</li>
+        <li>nível de interação do jogador</li>
+        <li>forma como ganhos e perdas se distribuem ao longo do tempo</li>
+      </ul>
+      <p>
+        Tratar todos os jogos da mesma forma é um erro comum entre iniciantes.
+      </p>
+    </section>
+
+    <section id="expectativas">
+      <h2>O que esperar ao jogar</h2>
+      <p>
+        Independentemente do tipo de jogo, os resultados variam naturalmente.
+        Sessões curtas podem dar uma perceção enganadora do funcionamento real.
+      </p>
+      <p>
+        Ter expectativas realistas e compreender o jogo escolhido
+        ajuda a manter decisões mais controladas.
+      </p>
+    </section>
+
+    <section id="proximos-passos">
+      <h2>Próximos passos</h2>
+      <ul>
+        <li><a href="/como-ler-condicoes">Como ler condições por tipo de jogo</a></li>
+        <li><a href="/gestao-de-limites">Gestão de limites em diferentes jogos</a></li>
+        <li><a href="/riscos-e-variancia">Riscos e variância por tipo de jogo</a></li>
+        <li><a href="/jogo-consciente">Jogo consciente e escolha de jogos</a></li>
+      </ul>
+
+      <div class="cta-box">
+        <h3>Conteúdo educativo (opcional)</h3>
+        <p>
+          No Telegram partilhamos novos guias explicativos sobre jogos
+          e funcionamento do casino online.
+        </p>
+        <a
+          class="btn btn-telegram btn-cta"
+          href={SITE.telegram ?? SITE.telegramUrl ?? "#"}
+          target="_blank"
+          rel="nofollow noopener noreferrer"
+        >
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M21.6 4.6 2.9 11.8c-1.3.5-1.3 1.2-.2 1.6l4.8 1.5 1.8 5.5c.2.6.1.8.8.8.6 0 1-.3 1.3-.6l2.3-2.3 4.8 3.5c.9.5 1.5.2 1.7-.8l3.1-14.6c.3-1.3-.5-1.9-1.7-1.4Z"
+                fill="white"
+              />
+            </svg>
+          </span>
+          Entrar no Telegram
+        </a>
+      </div>
+    </section>
+  </article>
+</GuideLayout>

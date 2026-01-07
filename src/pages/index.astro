@@ -1,4 +1,5 @@
 ---
+// src/pages/index.astro
 import { SITE } from "../config/site.js";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
@@ -45,64 +46,55 @@ const TELEGRAM_URL = SITE.telegram ?? SITE.telegramUrl ?? "#";
     <!-- HERO -->
     <section class="hero-mock">
       <div class="container hero-mock-inner">
-        <img class="hero-logo" src="/logo.png" alt="360Wins Portugal" />
+        <img class="hero-logo" src="/logo.png" alt={title} />
 
-        <h1 class="hero-title">
-          Guias de Casino Online em Portugal
-        </h1>
+        <h1 class="hero-title">Tipos de jogos de casino online</h1>
 
         <p class="hero-sub">
-          Informação clara, detalhada e em português de Portugal sobre como funcionam
-          os casinos online. Explicamos regras, condições, bónus, rodadas grátis,
-          gestão de banca e princípios de jogo responsável — sem promessas e sem exageros.
+          Slots, jogos de mesa e casino ao vivo têm regras e ritmos diferentes.
+          Neste site explicamos, de forma neutra e em português de Portugal, como
+          cada tipo de jogo funciona e o que normalmente muda entre categorias —
+          para ajudar a tomar decisões mais informadas, sem promessas e sem exageros.
         </p>
 
         <div class="hero-cards" id="guias">
-          <a class="mock-card" href="/casino-iniciantes">
+          <a class="mock-card" href="/guia-iniciante">
             <span class="mock-ic">★</span>
             <div>
-              <strong>Casino Online para Iniciantes</strong>
-              <small>Primeiros passos, conceitos básicos e erros comuns</small>
+              <strong>Guia para Iniciantes</strong>
+              <small>Tipos de jogos e diferenças essenciais</small>
             </div>
           </a>
 
-          <a class="mock-card" href="/condicoes-bonus">
+          <a class="mock-card" href="/como-ler-condicoes">
             <span class="mock-ic">✓</span>
             <div>
-              <strong>Condições de Bónus</strong>
-              <small>Exigido, prazos, limites e regras explicadas</small>
+              <strong>Como Ler Condições</strong>
+              <small>Regras relevantes por tipo de jogo</small>
             </div>
           </a>
 
-          <a class="mock-card" href="/free-spins">
+          <a class="mock-card" href="/gestao-de-limites">
             <span class="mock-ic">♢</span>
             <div>
-              <strong>Free Spins e Rodadas Grátis</strong>
-              <small>Como funcionam e quais as suas limitações</small>
+              <strong>Gestão de Limites</strong>
+              <small>Limites ajustados a slots, mesa e ao vivo</small>
             </div>
           </a>
 
-          <a class="mock-card" href="/rtp-volatilidade">
+          <a class="mock-card" href="/riscos-e-variancia">
             <span class="mock-ic">◆</span>
             <div>
-              <strong>RTP e Volatilidade</strong>
-              <small>O que significam e como afetam risco e decisões</small>
+              <strong>Riscos e Variância</strong>
+              <small>Como as oscilações mudam entre jogos</small>
             </div>
           </a>
 
-          <a class="mock-card" href="/gestao-banca">
+          <a class="mock-card" href="/jogo-consciente">
             <span class="mock-ic">⚑</span>
             <div>
-              <strong>Gestão de Banca</strong>
-              <small>Definir limites e manter decisões controladas</small>
-            </div>
-          </a>
-
-          <a class="mock-card" href="/jogo-responsavel">
-            <span class="mock-ic">☑</span>
-            <div>
-              <strong>Jogo Responsável</strong>
-              <small>Controlo, sinais de alerta e boas práticas</small>
+              <strong>Jogo Consciente</strong>
+              <small>Escolha de jogos, pausas e autocontrolo</small>
             </div>
           </a>
         </div>
@@ -133,10 +125,10 @@ const TELEGRAM_URL = SITE.telegram ?? SITE.telegramUrl ?? "#";
 
         <div class="faq-grid">
           <details class="faq-item">
-            <summary>O que é o 360Wins Portugal?</summary>
+            <summary>O que é este site?</summary>
             <p>
-              O 360Wins Portugal é um site informativo dedicado a explicar, de forma clara,
-              como funcionam os casinos online em Portugal, incluindo regras, bónus e boas práticas.
+              É um site informativo dedicado a explicar, de forma clara, os principais
+              tipos de jogos de casino online (slots, mesa e ao vivo) e como funcionam na prática.
             </p>
           </details>
 
@@ -149,34 +141,32 @@ const TELEGRAM_URL = SITE.telegram ?? SITE.telegramUrl ?? "#";
           </details>
 
           <details class="faq-item">
-            <summary>Este conteúdo é adequado para iniciantes?</summary>
+            <summary>Qual é a diferença entre slots, mesa e casino ao vivo?</summary>
             <p>
-              Sim. Os guias foram criados para serem acessíveis a quem está a começar,
-              sem deixar de ser úteis para utilizadores mais experientes.
+              As slots são automáticas e rápidas; jogos de mesa seguem regras próprias
+              e podem ter ritmo mais pausado; no casino ao vivo há dealers reais e interação em tempo real.
             </p>
           </details>
 
           <details class="faq-item">
-            <summary>O que devo verificar antes de aceitar um bónus?</summary>
+            <summary>Porque é importante ler condições por tipo de jogo?</summary>
             <p>
-              É importante verificar o exigido (wager), prazos, limites de aposta
-              e jogos elegíveis antes de ativar qualquer oferta.
+              Porque limites, regras e restrições variam consoante o jogo. Ler as condições
+              ajuda a evitar surpresas e a entender o que se aplica em cada categoria.
             </p>
           </details>
 
           <details class="faq-item">
             <summary>Porque existe um canal no Telegram?</summary>
             <p>
-              Para centralizar atualizações, novos guias e conteúdos adicionais
-              num único local, de forma opcional.
+              Para centralizar atualizações e novos guias num único local, de forma opcional.
             </p>
           </details>
 
           <details class="faq-item">
             <summary>Este conteúdo é focado em Portugal?</summary>
             <p>
-              Sim. O conteúdo é escrito em português de Portugal e focado
-              no contexto dos utilizadores em Portugal.
+              Sim. O conteúdo é escrito em português de Portugal e pensado para utilizadores em Portugal.
             </p>
           </details>
         </div>
