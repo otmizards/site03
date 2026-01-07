@@ -8,14 +8,15 @@ const {
   canonicalPath = "/",
 } = Astro.props;
 
-const TELEGRAM_URL = SITE.telegram ?? SITE.telegramUrl;
+const TELEGRAM_URL = SITE.telegram ?? SITE.telegramUrl ?? "#";
+
 
 const pageTitle = `${title} — ${SITE.name ?? "360Wins Portugal"}`;
 ---
 
 <BaseLayout title={pageTitle} description={description} canonicalPath={canonicalPath}>
   <header class="topbar">
-  <link rel="stylesheet" href="/styles/global.css" />
+ 
 
     <div class="container topbar-inner">
       <a class="topbar-brand" href="/" aria-label={SITE.name ?? "360Wins Portugal"}>
@@ -26,7 +27,12 @@ const pageTitle = `${title} — ${SITE.name ?? "360Wins Portugal"}`;
       <nav class="topbar-nav">
         <a href="/#guias">Guias</a>
         <a href="/#faq">FAQ</a>
-        <a class="btn btn-telegram btn-small" href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer">
+        <a
+  class="btn btn-telegram btn-small"
+  href={TELEGRAM_URL}
+  target="_blank"
+  rel="nofollow noopener noreferrer"
+>
           <span class="icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none">
               <path d="M21.6 4.6 2.9 11.8c-1.3.5-1.3 1.2-.2 1.6l4.8 1.5 1.8 5.5c.2.6.1.8.8.8.6 0 1-.3 1.3-.6l2.3-2.3 4.8 3.5c.9.5 1.5.2 1.7-.8l3.1-14.6c.3-1.3-.5-1.9-1.7-1.4Z" fill="white"/>
@@ -71,7 +77,8 @@ const pageTitle = `${title} — ${SITE.name ?? "360Wins Portugal"}`;
             </ul>
           </div>
 
-          <a class="btn btn-telegram btn-full" href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer">
+          <a class="btn btn-telegram btn-full" href={TELEGRAM_URL} target="_blank" rel="nofollow noopener noreferrer"
+>
             <span class="icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none">
                 <path d="M21.6 4.6 2.9 11.8c-1.3.5-1.3 1.2-.2 1.6l4.8 1.5 1.8 5.5c.2.6.1.8.8.8.6 0 1-.3 1.3-.6l2.3-2.3 4.8 3.5c.9.5 1.5.2 1.7-.8l3.1-14.6c.3-1.3-.5-1.9-1.7-1.4Z" fill="white"/>

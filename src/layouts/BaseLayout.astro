@@ -2,20 +2,21 @@
 import { SITE } from "../config/site.js";
 
 const {
-  title = SITE?.name ?? "360Wins Portugal",
-  description = SITE?.description ?? "Guias claros e diretos.",
+  title = SITE?.name ?? SITE?.siteName ?? "360Wins Portugal",
+  description = SITE?.description ?? SITE?.siteDescription ?? "Guias claros e diretos.",
   canonicalPath = "/",
 } = Astro.props;
 
-// Canonical robusto: NUNCA usar Astro.site em produção, porque em Pages pode virar .pages.dev.
-// Fonte de verdade: config do site (domínio final).
-const siteOrigin = SITE?.siteUrl || SITE?.url || SITE?.site || "https://360winspt.com";
+// Fonte única da verdade: domínio final do site (nunca .pages.dev)
+const siteOrigin =
+  SITE?.siteUrl || SITE?.url || SITE?.site || "https://360winspt.com";
 
-const canonicalPathSafe = canonicalPath?.startsWith("/") ? canonicalPath : `/${canonicalPath}`;
-const canonical = new URL(
-  canonicalPathSafe.endsWith("/") ? canonicalPathSafe : `${canonicalPathSafe}/`,
-  siteOrigin
-).toString();
+// Normaliza o path e força canonical consistente
+const path = (canonicalPath?.startsWith("/") ? canonicalPath : `/${canonicalPath || ""}`).replace(/\/{2,}/g, "/");
+const canonical = `${siteOrigin}${path.endsWith("/") ? path : `${path}/`}`;
+
+// OG image padrão (garante consistência em toda a rede)
+const ogImage = `${siteOrigin}/og.jpg`;
 ---
 
 <!doctype html>
@@ -27,6 +28,7 @@ const canonical = new URL(
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
+
     <meta name="robots" content="index,follow" />
 
     <!-- Open Graph -->
@@ -35,9 +37,9 @@ const canonical = new URL(
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
-    <meta property="og:image" content={`${new URL("/og.jpg", siteOrigin).toString()}`} />
+    <meta property="og:image" content={ogImage} />
 
-    <!-- Twitter (opcional, recomendado) -->
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
 
     <!-- Favicons -->

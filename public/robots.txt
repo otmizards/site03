@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://site01.360winspt.com/sitemap.xml
+Sitemap: https://site03.360winspt.com/sitemap-index.xml
